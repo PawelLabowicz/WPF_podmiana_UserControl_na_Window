@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="WPF_przelaczanie_usercontrol.UserControl1_View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_przelaczanie_usercontrol"
+             mc:Ignorable="d" 
+             d:DataContext="{d:DesignInstance Type=local:UserControl1ViewModel}"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Rectangle Fill="Beige"/>
+        <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <TextBlock Text="UserControl 1" Margin="5"/>
+            <Button Content="Zaladuj UserControl 2"
+                    Margin="5"
+                    Command="{Binding ZaladujUserControl2}"/>
+            <Button Content="Nic"
+                    Margin="5"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
